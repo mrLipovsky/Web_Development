@@ -1,0 +1,39 @@
+*{
+    box-sizing: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    border: 10px solid;
+    border-color: blueviolet;
+}
+.section-header {
+    text-align: center;
+    padding: 2rem;
+}
+.section-one{
+    background-color: blueviolet;
+}
+
+.li_second{
+    border-style: double;
+    color:rgb(42, 159, 165);
+    font-size: 2rem;
+}
+
+.li_third {
+    color:brown;
+    font-size: 2rem;
+}
+
+.table_head th {
+    border: 1rem black solid;
+
+}
+
+.table_body td {
+    border: .5rem black solid;
+    gap: none;
+
+}
