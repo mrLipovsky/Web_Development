@@ -1,6 +1,85 @@
+/* ALL */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+button {
+    padding: 0.3rem;
+}
+
+
+/* header  */
+header {
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center ;
+}
+
+h1, h2, h3, p {
+    padding: 1rem;
+}
+
+ul {
+    display: flex;
+    list-style:none;
+}
+
+li {
+    align-items: center ;
+    color:black; 
+    padding: 1rem;
+}
+
+/* main */
+main {
+    display: flex;
+    height: 80vw;
+    margin-bottom: 6rem;
+    background-color: aqua;
+}
+
+.main-section {
+    margin-top: 6rem;
+}
+
+input {
+    border: 1px solid black;
+    display: flex;
+    padding: .5rem;
+    margin: .2rem;
+    
+}
+
+.main-section__inputs {
+    width: 80vw;
+    padding: 1rem;
+}
+
+
+/* 
+====== main aside ======
+*/
+.main-aside {
+    width: 10vw;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem;
+}
+
+footer-navigation__menu > h3 {
+    padding-right: 4rem;
+}

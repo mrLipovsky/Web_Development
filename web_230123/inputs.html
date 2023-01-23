@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="header-navigation__menu">
+            <h1>Logo here</h1>
+            <ul>
+                <li><a href="index.html">main</a></li>
+                <li><a href="form.html">form</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <section class="main-section__inputs">
+                <h2>Inputs</h2>
+                <div class="main-section__input-name">
+                    <h2>text</h2>
+                    <input 
+                    type="text" 
+                    value="input here" 
+                    name="example user name" 
+                    placeholder="user name here"
+                    id="someName" 
+                    >
+                    <label for="someName"></label>
+                    <!-- inputs: disabled, readonly, required -->
+
+                    <!-- <input type="button" name="" id=""> -->
+                    <button>button</button>
+                </div>
+
+                <div class="main-section__input-checkbox">
+                    <h2>checkbox</h2>
+                    <input 
+                    type="checkbox" 
+                    name="adult" 
+                    id="checkboxId" 
+                    checked
+                    >
+                    <label for="checkboxId"> Over 18 </label>
+                </div>
+
+                <input type="color" name="" id="">
+
+                <div class="main-section__input-date">
+                    <h2>date</h2>
+                    <input 
+                    type="date" 
+                    value="2023-01-23"
+                    min="2023-01-10" 
+                    max="2023-01-27"
+                    name="date" 
+                    id="">
+                </div>
+
+                <div class="main-section__input-date-local">
+                    <h2>date local</h2>
+                    <input 
+                    type="datetime-local" 
+                    value="2023-01-10 22:00"
+                    name="datetime-local" 
+                    id="">
+                </div>
+                
+                <div class="main-section__input-email">
+                    <h2>email</h2>
+                    <form>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="user@email.com"
+                        pattern=".+@+[a-zA-Z]*.\.com"
+                        id=""
+                        >
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="main-section__input-file">
+                    <h2>file</h2>
+                    <input 
+                    type="file" 
+                    name="" 
+                    id=""
+                    accept="application/pdf "
+                    >
+                    <button type="submit">Sent</button>
+                </div>
+
+                <input type="hidden" name="" id="">
+
+                <div class="main-section__input-image">
+                    <h2>image</h2>
+                    <input 
+                    type="image" 
+                    name="" 
+                    id=""
+                    >
+                </div>
+
+                <input type="month" name="" id="">
+                <input type="number" name="" id="">
+                <input type="password" name="" id="">
+
+                <div class="main-section__input-radio">
+                    <h2>radio</h2>
+                    <label for="a"></label>
+                    <input type="radio" name="options" id="a">
+                    <label for="b"></label>
+                    <input type="radio" name="options" id="b">
+                    <label for="c"></label>
+                    <input type="radio" name="options" id="c">
+                </div>
+
+                <input type="range" name="" id="">
+                <!-- <input type="reset" name="" id=""> -->
+                <!-- reset button mozeme pouzit -->
+                <input type="search" name="" id="">
+                <!-- <input type="submit" name="" id=""> -->
+                <!-- submit button mozeme pouzit button -->
+                <input type="tel" name="" id="">
+                <input type="text" name="" id="">
+                <input type="time" name="" id="">
+                <input type="url" name="" id="">
+
+                <input type="calendar">
+            </section>
+
+        <aside class="main-aside">
+            <h2>Advertisment here</h2>
+        </aside>
+    </main>
+    
+
+    <footer>
+        <section>
+            <h2>
+                Contact here
+            </h2>
+            <ul>
+                <li>tel: 777 666 555</li>
+                <li>email: bla@blabla.com</li>
+            </ul>
+        </section>
+        <nav class="footer-navigation__menu">
+            <h3>Logo here</h3>
+            <ul>
+                <li><a href="#">main</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
