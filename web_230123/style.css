@@ -14,8 +14,10 @@ button {
 /* header  */
 header {
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 3rem;
+    height: 4rem;
+    background-color: aliceblue;
 }
 
 nav {
@@ -42,8 +44,8 @@ li {
 /* main */
 main {
     display: flex;
-    height: 80vw;
-    margin-bottom: 6rem;
+    height: 80vw auto;
+    margin-top: 4rem;
     background-color: aqua;
 }
 
@@ -78,6 +80,7 @@ footer {
     display: flex;
     justify-content:space-between;
     padding: 1rem;
+    bottom: 0;
 }
 
 footer-navigation__menu > h3 {

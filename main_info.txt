@@ -7,3 +7,10 @@ nutne pracovat na projekte postupne
 2030 prestavka 
 
 
+Projekt 
+prihlasenie 
+odhlasenie 
+html, css, js, php(back end)
+asynchronny pristup jquery 
+
+
