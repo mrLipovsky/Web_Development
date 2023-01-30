@@ -1,0 +1,140 @@
+* {
+    font-family: "roboto", sans-serif ;
+}
+
+.rounded {
+    text-decoration: none;
+    border-radius: 15px;
+    height: 35px;
+    outline: none;
+    border: 0;
+    background-color: bisque;
+    margin: 10px;
+}
+
+.pil {
+    border-radius: 18px;
+    height: 35px;
+    outline: none;
+    border: 0;
+    background-color: bisque;
+    margin: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    border: 0;
+    background-color: rgb(255, 0, 0);
+    font-size: 25px;
+    color: white;
+    /* box-shadow: h-offset v-offset blur spread color; */
+    box-shadow: 5px 5px black;
+    margin: 10px;
+}
+
+
+.circle:hover {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    border: 0;
+    background-color: rgb(255, 0, 0);
+    font-size: 25px;
+    color: white;
+}
+
+.card {
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px 4px black;
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.text-shadow {
+    text-shadow: 5px 5px 3px black;
+    margin: 10px;
+}
+
+.card-one {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px 4px black;
+    padding: 10px;
+    margin: 10px;
+    background-image: url(img/images.jfif);
+    background-repeat: no-repeat;
+    color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-two {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px 4px black;
+    padding: 10px;
+    margin: 10px;
+    background-image: url(img/images.jfif);
+    background-repeat: no-repeat;
+    color: antiquewhite;
+    background-size: contain;
+    background-position: center;
+}
+
+button:disabled {
+    text-decoration: none;
+    border-radius: 15px;
+    height: 35px;
+    outline: none;
+    border: 0;
+    background-color: rgb(0, 21, 255);
+    margin: 10px;
+    opacity: 0.5;
+}
+
+.card-three {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px 4px black;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(to bottom, rgb(21, 22, 34), rgb(181, 150, 103));
+}
+
+.primary-button {
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 10px;
+    background: linear-gradient(30deg, rgb(21, 22, 34) 20%, rgb(190, 165, 128));
+}
+
+.secondary-button {
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 10px;
+    background: radial-gradient(circle at top left, rgb(21, 22, 34), rgba(190, 165, 128, 10));
+}
+
+.roboto {
+    font-family: "roboto", sans-serif ;
+}
