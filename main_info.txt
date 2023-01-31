@@ -14,5 +14,5 @@ html, css, js, php(back end)
 asynchronny pristup jquery 
 
 
-
+@MEDIA uvadzame na konci suboru
 

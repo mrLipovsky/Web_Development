@@ -1,0 +1,315 @@
+p {
+    font-size: 30px;
+}
+
+p::before {
+    content: "''";
+    color: brown;
+}
+
+p::after {
+    content: "''";
+    color: rgb(52, 6, 108);
+}
+
+div {
+    display: flex;
+}
+
+#container{
+    display: flex;
+    /* margin: 2rem;
+    box-shadow: 10px 10px ;
+    background-color: rgb(206, 255, 8); */
+}
+
+#vnitrni{
+    display: block;
+    margin-left: 30px;
+    margin: 0 2rem 0 2rem;
+}
+
+
+#hlav {
+    width: 100%;
+    text-align: center;
+}
+
+.container__ing__text {
+    display: flex;
+    margin: 2rem;
+    box-shadow: 10px 10px ;
+    background-color: rgb(206, 255, 8);
+}
+.container_text {
+    display: block;
+    margin: 0 2rem 0 2rem;
+    font-size: 15px;
+}
+.container_text > p {
+    font-size: 20px;
+}
+
+.container_text > h3 {
+    font-size: 25px;
+}
+
+.flexitem{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: brown;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    margin: 20px;
+}
+
+.flexbox-row, 
+.flexbox-row-reverse,
+.flexbox-column,
+.flexbox-column-reverse {
+    display: flex;
+    border: 1px black solid;
+}
+
+.flexbox-row {
+    flex-direction: row;
+}
+
+.flexbox-column {
+    flex-direction: column;
+}
+
+.flexbox-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flexbox-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-wrap, 
+.flex-no-wrap, 
+.flex-wrap-rev {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    box-shadow: 10px 10px ;
+    background-color: rgb(206, 255, 8);
+}
+
+
+@media screen and (max-width: 500px) 
+{
+.flex-wrap {
+    flex-wrap: wrap;
+}
+}
+
+/* exercise */
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 2rem;
+    box-shadow: 10px 10px ;
+    background-color: rgb(199, 232, 69);
+}
+
+
+@media screen and (max-width: 800px) 
+{
+.box {
+    flex-direction: row;
+}
+}
+
+.flexgrow,
+.flexbasis,
+.flexshrink,
+.flex-start,
+.flex-end,
+.flex-center,
+.flex-space-between,
+.flex-space-around,
+.flex-space-evenly {
+    display: flex;
+    /* max-width: 700px; */
+    border: 1px black solid;
+    flex-direction: row;
+    
+}
+
+.flexitem_one {
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: brown;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexgrow > .flexitem_one:nth-child(1)
+{
+    flex-grow: 2;
+}
+
+.flexgrow > .flexitem_one:nth-child(2)
+{
+    flex-grow: 1;
+}
+
+.flexgrow > .flexitem_one:nth-child(3)
+{
+    flex-grow: 3;
+}
+
+.flexgrow > .flexitem_one:nth-child(4)
+{
+    flex-grow: 4;
+}
+
+/* ----------- */
+
+.flexbasis > .flexitem_one:nth-child(1)
+{
+    flex-basis: 1;
+}
+
+.flexbasis > .flexitem_one:nth-child(2)
+{
+    flex-basis: 0;
+}
+
+.flexbasis > .flexitem_one:nth-child(3)
+{
+    flex-basis: auto;
+}
+
+.flexbasis > .flexitem_one:nth-child(4)
+{
+    flex-basis: 200px;
+}
+
+/* ----------- */
+
+.flexshrink > .flexitem_one:nth-child(1)
+{
+    flex-shrink: 2;
+}
+
+.flexshrink > .flexitem_one:nth-child(2)
+{
+    flex-shrink: 0;
+}
+
+.flexshrink > .flexitem_one:nth-child(3)
+{
+    flex-shrink: auto;
+}
+
+.flexshrink > .flexitem_one:nth-child(4)
+{
+    flex-shrink: 50px;
+}
+
+.flex-start {
+justify-content: flex-start;
+}
+
+.flex-end{
+justify-content: flex-end;
+}
+
+.flex-center{
+justify-content: center;
+}
+
+.flex-space-between{
+justify-content: space-between;
+}
+
+.flex-space-around{
+justify-content: space-around;
+}
+
+.flex-space-evenly{
+justify-content: space-evenly;
+}
+
+/* align items */
+
+.align-start,
+.align-end, 
+.align-centered, 
+.align-strech,
+.align-baseline {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 200px;
+    border: 1px black solid;
+}
+
+.align-start {
+align-items: flex-start;
+}
+
+.align-end {
+align-items: flex-end;
+}
+
+.align-centered {
+align-items: center;
+}
+
+.align-centered > .flexitem_one:nth-child(3){
+    align-self: flex-start;
+    }
+
+.align-strech {
+align-items: stretch;
+}
+
+.align-strech >  .flexitem_one{
+height: auto;
+}
+
+.align-baseline {
+align-items: baseline;
+}
+
+.align-baseline > .flexitem_one:nth-child(4){
+height: 300px;
+}
+
+.align-baseline > .flexitem_one:nth-child(3){
+height: 200px;
+}
+
+.flex-gap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    /* row-gap: 10px;
+    column-gap: 30px; */
+    gap: 10px 30px;
+}
+
+.flexorder > .flexitem:nth-child(1){
+    order: 4;
+}
+
+.flexorder > .flexitem:nth-child(3){
+    order: 2;
+}
