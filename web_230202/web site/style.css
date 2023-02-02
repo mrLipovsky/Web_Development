@@ -1,0 +1,108 @@
+
+:root {
+    --blue-color: blue;
+    --red-color: red;
+    --green-color: green;
+    --yelow-color: rgb(188, 77, 175);
+}
+body {
+    height: 200vw;
+}
+.example {
+    margin: 0 auto;
+    width: 80px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.relative {
+    background-color: var(--blue-color);
+    color: white;
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    background-color: var(--red-color);
+    left: calc(100vw - 50% - 40px);
+    top: 100px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: var(--green-color);
+    left: calc(100vw - 50% - 40px);
+    top: 200px;
+}
+
+.sticky {
+    position: sticky;
+    background-color: var(--yelow-color);
+    transition: .5s;
+    left: 10px;
+    top: 0;
+    clip-path: circle(closest-side);
+}
+
+#button {
+    width: 100px;
+    height: 50px;
+    /* background-color: brown; */
+    transition: .5s;
+    border-radius: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background: conic-gradient(
+        hsl(360 100% 50%),
+        hsl(315 100% 50%),
+        hsl(270 100% 50%),
+        hsl(225 100% 50%),
+        hsl(180 100% 50%),
+        hsl(135 100% 50%),
+        hsl(90 100% 50%),
+        hsl(45 100% 50%),
+        hsl(0 100% 50%)
+    );
+}
+
+#button:hover {
+    transform: rotate(30deg) scale(2) ;
+    border-radius: 35px;
+    /* filter */
+    filter: hue-rotate(-100deg) saturate(0.8) brightness(0.9);
+}
+
+#anim {
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--red-color);
+    /* animation: animace 1s ease-in-out; */
+}
+
+#anim:hover {
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--red-color);
+    animation: animace 1s ease-in-out;
+}
+
+@keyframes animace {
+    0%{
+        transform: rotate(0deg) scale(0);
+    }
+    40%{
+        transform: rotate(30deg) scale(2);
+    }
+    80%{
+        transform: rotate(-30deg) scale(-2);
+    }
+    100%{
+        transform: rotate(0deg) scale(0);
+    }
+}

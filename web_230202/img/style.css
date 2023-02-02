@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.344);
+    overflow: hidden;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    background-image: url(./img/logo.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.telephon {
+    font-size: 25px;
+}
+
+.email {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.344);
+}
+
+.navitem {
+    color: black;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    background-image: url(./img/house_keys.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.obsah {
+    width: 400px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    /* margin: 0 auto; */
+    align-self: center;
+}
+
+.social {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.social-item {
+    width: 30px;
+    height: 30px;
+    border: 1px black solid;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#twiter {
+    background-image: url(./img/twitter.png);
+}
+
+#instagram {
+    background-image: url(./img/instagram.png);
+}
+#linkedin {
+    background-image: url(./img/linkedin.png);
+}
+#whatsapp {
+    background-image: url(./img/whatsup.png);
+}
+#facebook {
+    background-image: url(./img/facebook.png);
+}
