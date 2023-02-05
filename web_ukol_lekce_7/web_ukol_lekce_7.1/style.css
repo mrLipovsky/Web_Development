@@ -15,6 +15,7 @@ Variables
 /* primary/main color */
 --clr-primary-1: hsl(194, 30%, 64%);
 --clr-primary-2: hsl(0, 0%, 8%);
+--clr-grey:  rgb(167, 166, 166);
 
 /* primary/main fonts */
 --ff-primary: 'Open Sans', sans-serif;
@@ -41,9 +42,10 @@ box-sizing: border-box;
 
 body {
 font-family: var(--ff-primary);
-color: var(--clr-primary-2);
+background-color: var(--clr-grey);
 font-size: 0.875rem;
 }
+
 ul {
 list-style-type: none;
 }
@@ -76,39 +78,171 @@ font-family: var(--ff-primary);
 section
 ===============
 */
-header {
-    display: flex;
-    justify-content: center;
-    margin: var(--margine);
-}
 
 .section {  
     display: flex;
-    height: 200px;
-    width: 800px;
+    height: 100vh;
     margin: 0 auto;
 } 
 
-.section__primary p {
-    margin: var(--margine);
-}
-
-.img {
-    background-image: url(/img/samsung-uk-MBRrXdf8iSQ-unsplash.jpg);
+.section__primary {
+    background-image: url(./img/beautiful-milky-way-night-sky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 700px;
-    height: 200px;
+    width: auto;
 }
 
-.section__secondary p {
-    margin: 2rem 2rem 2rem 0rem;
+.planet {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@media screen and  (max-width: 600px) {
 
-    .section__secondary {
-        flex-wrap: wrap;
-        margin: 2rem 2rem 2rem 0rem;
+.section__primary--sun {
+    display: flex;
+    background-image: url(./img/010-sun.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 10s linear infinite sun;
+}
+
+@keyframes sun {
+    100% {
+        transform: rotate(359deg);
     }
 }
+
+/* mercury */
+.section__primary--mercury {
+    background-image: url(./img/008-mercury.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 8s linear infinite mercury;
+}
+
+@keyframes mercury {
+    0% { transform: rotate(0deg) translate(60px) rotate(0deg); }
+    100% { transform: rotate(360deg) translate(60px) rotate(-360deg); }
+}
+
+
+.section__primary--venus {
+    background-image: url(./img/002-venus.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 4s linear infinite venus;
+}
+
+@keyframes venus {
+    0% { transform: rotate(0deg) translate(120px) rotate(0deg); }
+    100% { transform: rotate(360deg) translate(120px) rotate(-360deg); }
+}
+
+
+
+.section__primary--earth {
+    background-image: url(./img/004-earth.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 7s linear infinite earth;
+}
+
+@keyframes earth {
+    0% { transform: rotate(0deg) translate(210px) rotate(0deg); }
+    100% { transform: rotate(360deg) translate(210px) rotate(-360deg); }
+}
+
+
+.section__primary--mars {
+    background-image: url(./img/003-mars.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 10s linear infinite mars;
+}
+
+@keyframes mars {
+    0% { transform: rotate(0deg) translate(270px) rotate(0deg); }
+    100% { transform: rotate(360deg) translate(270px) rotate(-360deg); }
+}
+
+
+.section__primary--jupiter {
+    background-image: url(./img/007-jupiter.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 10s linear infinite jupiter;
+}
+
+@keyframes jupiter {
+    0% { transform: rotate(0deg) translate(330px) rotate(0deg); }
+    100% { transform: rotate(360deg) translate(330px) rotate(-360deg); }
+}
+
+
+
+.section__primary--saturn {
+    background-image: url(./img/001-saturn.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 12s linear infinite saturn;
+}
+
+@keyframes saturn {
+    0% { transform: rotate(0deg) translate(390px) rotate(0deg); }
+    100% { transform: rotate(360deg) translate(390px) rotate(-360deg); }
+}
+
+
+.section__primary--uran {
+    background-image: url(./img/009-pluto.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 12s linear infinite saturn;
+}
+
+@keyframes saturn {
+    0% { transform: rotate(0deg) translate(450px) rotate(0deg); }
+    100% { transform: rotate(360deg) translate(450px) rotate(-360deg); }
+}
+
+
