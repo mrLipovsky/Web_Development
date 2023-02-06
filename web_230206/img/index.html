@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lekce 8 - javascript </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="logo"></div>
+            <div class="email">conact</div>
+        </header>
+
+        <nav>
+            <a class="navitem" href="index.html">Home</a>
+            <a class="navitem" href="">About</a>
+            <a class="navitem" href="">Houses</a>
+            <a class="navitem" href="">Sell</a>
+            <a class="navitem" href="">Services</a>
+        </nav>
+
+
+        <section>
+            <div class="flex">
+                <div class="image"></div>
+                <div class="obsah">
+                    <h1>Welcome</h1>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quis laborum! Ut, accusamus. Dignissimos commodi vitae, quo quas tenetur officia numquam ratione temporibus, quaerat eius porro? Repellat consequatur aliquid eligendi!</p>
+                    </div>
+                    
+                    <button onclick="document.getElementById('demo').innerText = 'baaff'" 
+                    class="button">
+                    Klikni na mna
+                    </button>
+                    <p id="demo"></p>
+
+        
+                <!-- ZAROVKA -->
+                    <button
+                    onclick="turnBulbOn()"
+                    class="button">
+                    Turn on
+                    </button>
+                    <img id="bulb" src="./img/bulboff.png" style="width: 100px;" alt="">
+                    
+                    <button
+                    onclick="turnBulbOff()"
+                    class="button">
+                    Turn off
+                    </button>
+
+
+                    <div class="social"> 
+                        <a href=""><div class="social-item" id="twiter"></div></a>
+                        <a href=""><div class="social-item" id="instagram"></div></a>
+                        <a href=""><div class="social-item" id="linkedin"></div></a>
+                        <a href=""><div class="social-item" id="whatsapp"></div></a>
+                        <a href=""><div class="social-item" id="facebook"></div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="logo"></div>
+        <div class="telephon">+421 702 189 274</div>
+        <div class="email">email@email.com</div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="operation.js"></script>
+
+</body>
+</html>
