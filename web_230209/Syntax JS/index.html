@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web 230207</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- podmienka -->
+<input type="text" id="pole">
+<button onclick="buttonClickIf()">if</button>
+<button onclick="buttonClickIfElse()">if else</button>
+<button onclick="buttonClickIfElseIf()">if elseif else</button>
+<button onclick="buttonClickSwitchf()">switch</button>
+<br>
+Konjunkce
+    <table>
+        <thead>
+            <tr>
+                <th>AND</th>
+                <th>a</th>
+                <th>b</th>
+                <th>Vysledek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+    Disjunkce
+    <table>
+        <thead>
+            <tr>
+                <th>OR</th>
+                <th>a</th>
+                <th>b</th>
+                <th>Vysledek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+    Implikace
+    <table>
+        <thead>
+            <tr>
+                <th>IMP</th>
+                <th>a</th>
+                <th>b</th>
+                <th>Vysledek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+    Ekvivalence
+    <table>
+        <thead>
+            <tr>
+                <th>EKV</th>
+                <th>a</th>
+                <th>b</th>
+                <th>Vysledek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+
+<script src="./script.js"></script>
+</body>
+</html>

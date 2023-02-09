@@ -37,3 +37,27 @@ function reverseWordOrder() {
 
     document.getElementById('resultOne').innerText = resultOne;
 };
+
+// print event to console
+
+function logEvent(eventNameOne, occuredOne){
+    console.log(`Event: &{eventName} ocured on &{ocured}`);
+}
+
+logEvent('', date)
+
+// print event to console + if && ||
+
+function logEvent(eventNameOne, occuredOne){
+    console.log(`Event: &{eventName} ocured on &{ocured}`);
+if( date <= date ){
+    console.log('chyba')
+}else if( date = date ) {
+    console.log('chyba')
+}
+else {
+    console.log('ok')
+}
+};
+
+logEvent('event name', date)
