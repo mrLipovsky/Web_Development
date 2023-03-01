@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header p.link {
+    color: black;
+    cursor: pointer;
+}
+
+header p.link.active {
+    color: rgb(197, 0, 0);
+    cursor: pointer;
+}
+
+
+header p.link.hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+main .page {
+    display: none;
+}
+
+main .page.active {
+    display:block;
+}

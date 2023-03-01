@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calkulator ktory ovladne svet 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <input id="display" class="display" readonly>
+        <br>
+        <br>
+        <div class="buttons">
+            <button onclick="addNum(this.innerText)" class="number">1</button>
+            <button onclick="addNum(this.innerText)" class="number">2</button>
+            <button onclick="addNum(this.innerText)" class="number">3</button>
+            <br>
+            <button onclick="addNum(this.innerText)" class="number">4</button>
+            <button onclick="addNum(this.innerText)" class="number">5</button>
+            <button onclick="addNum(this.innerText)" class="number">6</button>
+            <br>
+            <button onclick="addNum(this.innerText)" class="number">7</button>
+            <button onclick="addNum(this.innerText)" class="number">8</button>
+            <button onclick="addNum(this.innerText)" class="number">9</button>
+            
+        <div class="operationButtons">
+            <button onclick="sum()" class="operation" disabled>+</button>
+            <button onclick="substract()" class="operation" disabled>-</button>
+            <button onclick="multiple()" class="operation" disabled>*</button>
+            <button onclick="divide()" class="operation" disabled>/</button>
+        </div>
+
+        <div id="resultButton" class="resultButton">
+            <button onclick="showResult()">=</button>
+        </div>
+         <br>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button onclick="createCustomElements()">create</button>
+    <button onclick="removeCustomElements()">delete</button>
+    <button onclick="replaceCustomElements()">replace</button>
+
+<script src="./script.js"></script>
+</body>
+</html>
