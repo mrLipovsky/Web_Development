@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <fieldset>
@@ -19,6 +20,28 @@
         <br><br>
         <button onclick="validateForm(this.parentNode)">Submit</button>
     </fieldset>
+
+    <div id="ctverec" 
+    onmousedown="buttonMouseDown(this)"
+    onmouseup="buttonMouseUp(this)"
+    onmousemove="buttonMouseMove(this)"
+    onmouseout="buttonMouseOut(this)">
+    </div>
+
+    <form>
+        <input type="search" name="" id="" onsearch="elementSearch(this)">
+        <div id="serach-result"></div>
+        <fieldset>
+            <br>
+            <input type="text"
+            onfocus="elementFocus(this)"
+            onblur="elementLostFocus(this)"
+            onselect="elementLostFocus(this, event)"
+            oninput="elementInput(this)">
+        </fieldset>
+    </form>
+
+
 
     
 <script src="./script.js"></script>

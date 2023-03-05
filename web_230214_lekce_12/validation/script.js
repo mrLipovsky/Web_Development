@@ -100,3 +100,70 @@ function validatePasswordAdvanced(passsword){
 var tlacitko = document.getElementsByTagName("button")[0];
 tlacitko.style.color = "red";
 tlacitko.style.background = "black";
+tlacitko.onclick = buttonClick;
+
+function buttonClick(){
+    window.alert('hellow word');
+}
+
+function buttonMouseDown(div){
+    div.style.backgroundColour = 'red';
+}
+
+function buttonMouseUp(div){
+    div.style.backgroundColour = 'blue';
+
+}
+
+function buttonMouseMove(div){
+    div.style.backgroundColour = 'green';
+}
+
+function buttonMouseOut(div){
+    div.style.backgroundColour = 'black';
+}
+
+//elements udalosti
+function elementFocus(object){
+    object.style.transform = 'scale(1.2)';
+}
+
+function elementLostFocus(object){
+    object.style.transform = 'scale(1)';
+}
+
+function elementSelect(object){
+    console.log(object.value);
+}
+
+function elementInput(object, event){
+    console.log('vybrany text je:' + 
+    object.value.substring(event.target.selectionStart,
+        event.target.selectionEnd));
+}
+const lorem = 'Lorem Ipsum'
+var loremArr = lorem.split(" ");
+var res = dokument.getElementsById('serach-result');
+
+function elementSearch(object){
+    var isNotFound = true;
+    res.innerHTML = '';
+    var delimiter = object.value.toLowerCase();
+
+    if(delimiter === ''){
+        return;
+    }
+
+    lowerArr.forEach(word => {
+        if(word.toLowerCase().includes(delimiter)){
+        var wordParts = word.toLowerCase().split(delimiter);
+        var resWord = wordParts.join(`<br>$(delimiter)</br>`);
+        res.innerHTML += `$(resWord)<br>`;
+        isNotFound = false;
+        }
+    });
+
+    if(isNotFound){
+        res.innerHTML += `Not found: $(delimiter)<br>`;
+    }
+}
