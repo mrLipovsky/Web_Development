@@ -1,0 +1,69 @@
+    SELECT * FROM users
+WHERE Name LIKE 'a%' OR Name LIKE 'b%';
+
+SELECT * FROM users
+WHERE Name NOT LIKE 'b%';
+
+SELECT COUNT(id) as Count_users
+FROM users;
+
+SELECT COUNT(Id) as Count_country
+FROM Users  
+WHERE Country = "Czech Republic"
+
+
+z dvoch tabuliek
+SELECT * 
+FROM users
+WHERE Id IN (
+	SELECT userId 
+    FROM posts
+)
+
+SELECT * FROM users WHERE Age BETWEEN 20 and 32;
+
+SQL one to many relationship 
+
+select Order.OrderID, Customer.CustomerName,
+Orders.OrderDate
+FROM Orders
+INNER JOIN 
+
+// INNER JOIN //
+vystup rovnaky v obou tabulkach 
+SELECT u.Name, u.Counrty
+FROM users as u 
+INNER JOIN posts as p ON 
+u.Id = p.UserId
+
+// LEFT JOIN //
+vystup z jednej tabulky vsetky a z druhej len co hladame 
+SELECT *
+FROM users as u
+LEFT OUTER JOIN  posts as p on 
+p.UserId = u.Id 
+
+// LEFT OUTER JOIN //
+SELECT *
+FROM users as u
+LEFT OUTER JOIN  posts as p on 
+p.UserId = u.Id 
+
+// RIGHT JOIN //
+vystup z jednej tabulky a z vsetko z druhej  
+
+// RIGHT OUTER JOIN //
+
+// FULL OUTER JOIN //
+
+//GROUP BY//
+SELECT Country, Age,
+AVG(Age) as Avarage_Age, 
+MAX(Age) as Maximum_Age, 
+COUNT(Id) AS User_Count
+from users
+GROUP by Country, Age
+
+
+SELECT * FROM users
+WHERE Name LIKE 'a%' OR Name LIKE 'b%'
