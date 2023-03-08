@@ -1,10 +1,10 @@
 <?PHP 
 
-class userName{
+class User{
     public int $Id;
     public string $Username;
     public string $Password;
-    public string $FurstName;
+    public string $FirstName;
     public string $LastName;
 }
 

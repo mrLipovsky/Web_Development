@@ -1,10 +1,18 @@
 <?PHP 
 
-require_once("./db/db.php");
-require_once("./dal/repository.php");
-require_once("./model/User.php");
+// require_once(__DIR__.'/../dal/Repository.php');
+// require_once(__DIR__.'/../db/db.php');
+// require_once(__DIR__.'/../model/User.php');
+// require_once(__DIR__.'/../dal/UsersRepository.php');
 
-$repo = new Repository($connection, "Users");
+include __DIR__.'../dal/Repository.php';
+include __DIR__.'../db/db.php';
+include __DIR__.'../model/User.php';
+include __DIR__.'../dal/UsersRepository.php';
+
+
+
+$repo = new UserRepository($connection);
 
 // $input = array("Username" => "PeterLipo", "Password" => "ssjhjjs", "FirstName" => "Peter", "LastName"=> "Lipo");
 // $newUserId = $repo -> create($input);
@@ -22,7 +30,6 @@ $repo = new Repository($connection, "Users");
 $res = $repo -> get_user("PeterLipo");
 
 var_dump($res);
-
 ?>
 
 <!DOCTYPE html>

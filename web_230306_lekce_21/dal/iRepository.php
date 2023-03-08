@@ -1,5 +1,5 @@
 <?PHP
-interface IRepository 
+interface IRepository
 {
     public function create(array $fieldsAndValues) : int;
     public function retrieve(string $condition = null) : array;

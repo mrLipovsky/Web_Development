@@ -1,6 +1,9 @@
 <?PHP
 
-require_once('iRepository.php');
+// require_once(__DIR__.'/iRepository.php');
+
+include __DIR__.'/iRepository.php';
+
 
 class Repository implements IRepository
     {
