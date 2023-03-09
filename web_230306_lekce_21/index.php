@@ -1,18 +1,32 @@
 <?PHP 
+session_start();
 
-// require_once(__DIR__.'/../dal/Repository.php');
-// require_once(__DIR__.'/../db/db.php');
-// require_once(__DIR__.'/../model/User.php');
-// require_once(__DIR__.'/../dal/UsersRepository.php');
+require_once(__DIR__.'/dal/Repository.php');
+require_once(__DIR__.'/db/db.php');
+require_once(__DIR__.'/model/User.php');
+require_once(__DIR__.'/dal/UsersRepository.php');
+require_once(__DIR__.'/dal/GroupRepository.php');
+require_once(__DIR__.'/dal/ItemRepository.php');
+require_once(__DIR__.'/model/Group.php');
+require_once(__DIR__.'/auth/crypt.php');
+require_once(__DIR__.'/auth/auth.php');
+require_once(__DIR__.'/auth/login.php');
 
-include __DIR__.'../dal/Repository.php';
-include __DIR__.'../db/db.php';
-include __DIR__.'../model/User.php';
-include __DIR__.'../dal/UsersRepository.php';
+$auth = new Auth($connection);
 
+if(!isset($_SESSION["email"]))
+{
+    header("Location: auth/login.php");
+}
 
+if(!$auth -> check_user($_SESSION["name"], $_SESSION["heslo"]))
+{
+    header("Location: auth/login.php");
+}
+// ssjhjjs
 
-$repo = new UserRepository($connection);
+// $repo = new ItemRepository($connection);
+$crypt = new Crypt();
 
 // $input = array("Username" => "PeterLipo", "Password" => "ssjhjjs", "FirstName" => "Peter", "LastName"=> "Lipo");
 // $newUserId = $repo -> create($input);
@@ -27,9 +41,15 @@ $repo = new UserRepository($connection);
 // $input = "Id = 2";
 // $repo -> delete($input);
 
-$res = $repo -> get_user("PeterLipo");
+// $res = $repo -> get_Items_by_group("PeterLipo");
 
-var_dump($res);
+// var_dump($res);
+
+// echo $crypt -> encrypt("ssjhjjs");
+
+
+
+
 ?>
 
 <!DOCTYPE html>

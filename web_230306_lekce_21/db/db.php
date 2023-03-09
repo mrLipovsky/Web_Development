@@ -7,8 +7,6 @@ $database = 'Lekce12PCSWD20230117';
 
 $connection = new mysqli($servername, $username, $password, $database);
 
-echo "connection OK"
-
 
 
 ?>
